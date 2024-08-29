@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Donation.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <nav class="upper-navbar">
+        <div class="brand">
+            <a href="index.html">Blood Donation</a>
+        </div>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Doner.html">Donor</a>
+            <a href="patient.html">Patient</a>
+            <a href="Donation.html">Donations</a>
+            <a href="Blood_Request.html">Blood Request</a>
+            <a href="request-history.html">Request History</a>
+            <a href="index.html">Blood Stock</a>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section id="details">
+            <h1>Blood Donation Details</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donor Name</th>
+                        <th>Disease</th>
+                        <th>Age</th>
+                        <th>Blood Group</th>
+                        <th>Unit (ml)</th>
+                        <th>Request Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Flu</td>
+                        <td>29</td>
+                        <td>A+</td>
+                        <td>500</td>
+                        <td>2024-08-30</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Flu</td>
+                        <td>29</td>
+                        <td>A+</td>
+                        <td>500</td>
+                        <td>2024-08-30</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Flu</td>
+                        <td>29</td>
+                        <td>A+</td>
+                        <td>500</td>
+                        <td>2024-08-30</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="Donation.js"></script>
+</body>
+</html>

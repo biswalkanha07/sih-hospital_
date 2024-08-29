@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Upper Navbar styles */
+.upper-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc3545; /* Red color */
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.upper-navbar .brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.upper-navbar .nav-toggle {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.upper-navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.upper-navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.upper-navbar .nav-links a:hover {
+    color: #007bff;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .upper-navbar .nav-toggle {
+        display: block;
+    }
+
+    .upper-navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #dc3545; /* Red color */
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .upper-navbar .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Content area styles */
+.content {
+    margin-top: 60px; /* Adjust for upper navbar */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Blood Stock Section */
+.blood-stock-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.blood-group {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blood-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blood-group h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.blood-group p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .blood-stock-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blood-group {
+        width: 90%;
+        max-width: 300px;
+    }
+}
